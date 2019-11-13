@@ -1,0 +1,15 @@
+#include "stdafx.h"
+#include "iostream"
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "ru");
+	double n,x=0;
+	cout << "Введите n: ";
+	cin >> n;
+	for (int i=1; i <= n ;i++) {
+		x += 2 * i - 1;
+		cout << x<< endl;
+	}
+}
