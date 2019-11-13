@@ -1,0 +1,14 @@
+#include "stdafx.h"
+#include "iostream"
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "ru");
+	double x,p;
+	cout << "Введите цену за 1 кг конфет: ";
+	cin >> x;
+	for (double p=0.1;p <= 1;p=p + 0.1) {
+		cout << p << "кг конфет стоит: " << p * x << endl;
+	}
+}
